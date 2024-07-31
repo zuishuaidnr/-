@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>调查问卷</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            border-radius: 8px;
+        }
+        .image-gallery {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        .questionnaire {
+            margin: 20px 0;
+        }
+        .questionnaire label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .questionnaire input[type="text"],
+        .questionnaire textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .questionnaire textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>公司调查问卷</h1>
+            <p>请填写以下调查问卷以帮助我们改进服务。</p>
+        </header>
+        
+        <!-- 视频展示区 -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/你的视频ID" allowfullscreen></iframe>
+        </div>
+
+        <!-- 图片展示区 -->
+        <div class="image-gallery">
+            <img src="你的图片链接1" alt="描述图片1">
+            <img src="你的图片链接2" alt="描述图片2">
+        </div>
+        
+        <!-- 公司详情区 -->
+        <section>
+            <h2>公司详情</h2>
+            <p>我们公司致力于提供高质量的金融服务，帮助客户实现财务目标。我们的团队由经验丰富的专业人士组成，提供定制化的解决方案。</p>
+        </section>
+
+        <!-- 调查问卷区 -->
+        <section class="questionnaire">
+            <h2>调查问卷</h2>
+            <form>
+                <label for="q1">1. 你对我们公司的服务满意吗？</label>
+                <textarea id="q1" name="q1"></textarea>
+
+                <label for="q2">2. 你认为我们公司的哪些方面需要改进？</label>
+                <textarea id="q2" name="q2"></textarea>
+
+                <label for="q3">3. 你对我们的客户服务有何评价？</label>
+                <textarea id="q3" name="q3"></textarea>
+
+                <label for="q4">4. 你是否愿意推荐我们公司给其他人？为什么？</label>
+                <textarea id="q4" name="q4"></textarea>
+
+                <label for="q5">5. 你觉得我们公司的服务价格如何？</label>
+                <textarea id="q5" name="q5"></textarea>
+
+                <label for="q6">6. 你对我们的产品质量有什么意见？</label>
+                <textarea id="q6" name="q6"></textarea>
+
+                <label for="q7">7. 你对我们网站的用户体验有什么反馈？</label>
+                <textarea id="q7" name="q7"></textarea>
+
+                <label for="q8">8. 你还有其他建议或意见吗？</label>
+                <textarea id="q8" name="q8"></textarea>
+
+                <button type="submit" class="submit-button">提交问卷</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
