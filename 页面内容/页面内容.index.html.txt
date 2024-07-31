@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金融简约风格网页</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我们的金融简约风格网站</h1>
+    </header>
+    <main>
+        <section id="company-intro">
+            <h2>公司介绍</h2>
+            <p>我们是一家致力于提供高质量金融服务的公司，帮助客户实现财务目标。</p>
+            <img src="assets/company-logo.png" alt="公司Logo">
+        </section>
+        <section id="media">
+            <h2>多媒体展示</h2>
+            <img src="assets/sample-image.jpg" alt="展示图片">
+            <video width="640" height="360" controls>
+                <source src="assets/sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section id="survey">
+            <h2>调查问卷</h2>
+            <form id="survey-form">
+                <label for="q1">1. 你对我们公司的服务满意吗？</label>
+                <select id="q1" name="service-satisfaction" required>
+                    <option value="" disabled selected>请选择...</option>
+                    <option value="very-satisfied">非常满意</option>
+                    <option value="satisfied">满意</option>
+                    <option value="neutral">中立</option>
+                    <option value="dissatisfied">不满意</option>
+                    <option value="very-dissatisfied">非常不满意</option>
+                </select>
+
+                <label for="q2">2. 你认为我们的服务有哪些改进的地方？</label>
+                <textarea id="q2" name="improvement-suggestions" required></textarea>
+
+                <label for="q3">3. 你最喜欢我们的哪些功能或服务？</label>
+                <input type="text" id="q3" name="favorite-features" required>
+
+                <label for="q4">4. 你对我们的价格水平感到满意吗？</label>
+                <input type="radio" id="q4-yes" name="price-satisfaction" value="yes" required>
+                <label for="q4-yes">是</label>
+                <input type="radio" id="q4-no" name="price-satisfaction" value="no" required>
+                <label for="q4-no">否</label>
+
+                <label for="q5">5. 你多久使用一次我们的服务？</label>
+                <input type="number" id="q5" name="usage-frequency" required>
+
+                <label for="q6">6. 你觉得我们的网站易于使用吗？</label>
+                <input type="radio" id="q6-yes" name="website-ease" value="yes" required>
+                <label for="q6-yes">是</label>
+                <input type="radio" id="q6-no" name="website-ease" value="no" required>
+                <label for="q6-no">否</label>
+
+                <label for="q7">7. 你希望我们添加哪些新功能？</label>
+                <input type="text" id="q7" name="new-features" required>
+
+                <label for="q8">8. 你是否愿意推荐我们的服务给他人？</label>
+                <input type="radio" id="q8-yes" name="recommend" value="yes" required>
+                <label for="q8-yes">是</label>
+                <input type="radio" id="q8-no" name="recommend" value="no" required>
+                <label for="q8-no">否</label>
+
+                <button type="submit">提交</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 金融简约风格公司</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
