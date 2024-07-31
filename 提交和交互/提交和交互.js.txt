@@ -1,0 +1,6 @@
+// script.js
+document.getElementById('survey-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // 阻止表单的默认提交行为
+    alert('感谢您的提交！');
+    // 在这里你可以添加更多的处理逻辑，比如将数据发送到服务器等
+});
